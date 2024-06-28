@@ -371,7 +371,15 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer .container {
+  display: flex;
+}
 .foot-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 121px;
+}
+.foot-logo-cont {
 }
 .footer-logo-link {
   font-weight: 700;
