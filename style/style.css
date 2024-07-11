@@ -476,6 +476,7 @@ a {
   display: flex;
 }
 .footer-form-subscribe {
+  display: flex;
 }
 .footer-label-subscribe {
 }
@@ -499,6 +500,7 @@ a {
 }
 .footer-btn-suscribe {
   display: flex;
+  text-align: center;
   border-radius: 4px;
   padding: 8px 24px;
   margin-left: 16px;
@@ -511,7 +513,7 @@ a {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-  text-align: center;
+  cursor: pointer;
   color: var(--white);
 }
 .footer-svg-subscribe {
