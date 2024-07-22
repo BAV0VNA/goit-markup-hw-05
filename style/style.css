@@ -472,9 +472,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-/* .footer-form-btn {
-  display: flex;
-} */
+
 .footer-form-subscribe {
   display: flex;
 }
@@ -534,6 +532,8 @@ svg.footer-svg-subscribe {
   opasity: 0;
   display: none;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
   display: flex;
@@ -553,6 +553,7 @@ svg.footer-svg-subscribe {
   padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   display: flex;
@@ -609,7 +610,7 @@ svg.footer-svg-subscribe {
 .modal-form {
 }
 .modal-cont-label {
-  margin-top: 8px;
+  margin-bottom: 8px;
   position: relative;
 }
 .modal-label {
