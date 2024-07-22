@@ -613,6 +613,8 @@ svg.footer-svg-subscribe {
   position: relative;
 }
 .modal-label {
+  display: block;
+  margin-bottom: 4px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -625,6 +627,7 @@ svg.footer-svg-subscribe {
 }
 .conteiner-textarea {
   margin-bottom: 16px;
+  margin-top: 8px;
 }
 .modal-input {
   width: 100%;
