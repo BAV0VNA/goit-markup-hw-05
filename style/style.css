@@ -755,8 +755,8 @@ input:checked + .modal-label-privacy .modal-span-check {
 .modal-span-check {
   width: 16px;
   height: 16px;
-  border: 1px solid #ccc;
-  display: flex;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
