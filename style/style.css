@@ -472,9 +472,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-.footer-form-btn {
+/* .footer-form-btn {
   display: flex;
-}
+} */
 .footer-form-subscribe {
   display: flex;
 }
