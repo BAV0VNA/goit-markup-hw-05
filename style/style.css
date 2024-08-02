@@ -88,9 +88,10 @@ a {
   color: #2e2f42;
 }
 .web-link-header {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  /* line-height: 117%; */
+  line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -107,13 +108,37 @@ a {
 .nav-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+.navigation-link {
   color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-link:hover::after,
+.navigation-link:focus::after {
+  width: 100%;
+  color: #404bbf;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address {
 }
@@ -144,6 +169,7 @@ a {
 }
 /* Hero */
 .hero {
+  max-width: 1440px;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -151,7 +177,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../image/hero-background.jpg);
+    url(../images/hero-background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,7 +291,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .hero-prof-descr {
   font-weight: 400;
@@ -396,9 +422,10 @@ a {
 .foot-cont {
   display: flex;
   flex-direction: row;
-  gap: 121px;
 }
+
 .foot-logo-cont {
+  margin-right: 120px;
 }
 .footer-logo-link {
   font-weight: 700;
@@ -425,6 +452,7 @@ a {
   margin-top: 16px;
 }
 .foot-svg-cont {
+  margin-right: 80px;
 }
 .foot-svg-title {
   font-weight: 500;
@@ -702,14 +730,6 @@ svg.footer-svg-subscribe {
 .input-checkbox:active {
   fill: #404bbf;
 }
-
-/* .modal-svg-checkbox {
-  display: none;
-}
-
-.input-checkbox:checked + .modal-label-privacy .modal-svg-checkbox {
-  display: block;
-} */
 
 input:checked + .modal-label-privacy {
   fill: #f4f4fd;
