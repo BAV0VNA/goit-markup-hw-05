@@ -694,7 +694,6 @@ svg.footer-svg-subscribe {
   color: var(--light-slate);
 }
 .input-checkbox {
-  display: none;
 }
 .input-checkbox:active {
   fill: #404bbf;
