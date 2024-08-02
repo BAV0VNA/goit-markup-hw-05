@@ -52,11 +52,15 @@ a {
 }
 .visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
 }
 .container {
   max-width: 1158px;
@@ -699,13 +703,13 @@ svg.footer-svg-subscribe {
   fill: #404bbf;
 }
 
-.modal-svg-checkbox {
+/* .modal-svg-checkbox {
   display: none;
 }
 
 .input-checkbox:checked + .modal-label-privacy .modal-svg-checkbox {
   display: block;
-}
+} */
 
 input:checked + .modal-label-privacy {
   fill: #f4f4fd;
